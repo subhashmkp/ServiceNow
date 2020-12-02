@@ -1,0 +1,29 @@
+//Script Include: Gears
+
+var Gears = Class.create();
+Gears.prototype = {
+    initialize: function () {
+        this.Weapons = []; //One weapon per level [{level : weapon},...]
+    },
+
+    _addWeapons: function (weapon, level) { //req type
+        if (this._getWeapon(level) == '') {
+            this.Weapons.push({
+                level: level,
+                weapon: weapon
+            }); //Push the weapon key value pair in the array
+        }
+    },
+
+    _getWeapon: function (level) {
+        var weapon = '';
+        for (i = 0; i < this.Weapons.length; i++) {
+            if (this.Weapons[i].level == level) {
+                weapon = this.Weapons[i].weapon;
+            }
+        }
+        return weapon;
+    },
+
+    type: 'Gears'
+}
