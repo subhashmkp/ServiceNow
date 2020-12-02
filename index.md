@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to ServiceNow Code Snippets
 
 You can use the [editor on GitHub](https://github.com/subhashmkp/ServiceNow/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
